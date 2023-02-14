@@ -33,7 +33,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license would you like to use in the application?',
-        choices: ["MIT", "Apache 2.0", "Boost Software", "Eclipse Public", "None" ]
+        choices: ["MIT", "Apache", "GPL", "BSL", "None" ]
     },
     
     {
@@ -69,8 +69,10 @@ const questions = [
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-    .prompt(questions => {
-        fs.writeFileSync("README.md", generateMarkdown(questions))
+    .prompt(questions)
+    .then(responses => {
+        fs.writeFileSync("README.md", generateMarkdown(responses))
+        console.log("Your README has been created!")
     })
 }
 

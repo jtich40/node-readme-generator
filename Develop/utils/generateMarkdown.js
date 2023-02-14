@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![License](https://img.shields.io/badge/license-${license}-red)`
+    return `![License](https://img.shields.io/badge/license-${license}-red.svg)`
   }
   return ''
 }
@@ -21,8 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "None") {
     return `## License
-    
-    This application is licensed by the ${license} license.`
+  This application is licensed by the ${license} license.`
   }
   return ''
 }
@@ -38,14 +37,14 @@ ${data.description}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-${renderLicenseLink(data.license)}
+* ${renderLicenseLink(data.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
-*[Questions](#questions)
+* [Questions](#questions)
 
 ## Installation
 
-Use the command listed below to install required dependencies for the application:
+Use the following command to install required dependencies for the application:
 ${data.installation}
 
 ## Usage
@@ -58,7 +57,7 @@ ${data.contributing}
 
 ## Tests
 
-Use the command listed below to run tests for the application:
+Use the following command to run tests for the application:
 ${data.test}
 
 ## Questions
