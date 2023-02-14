@@ -18,7 +18,7 @@ Use the following command to install required dependencies for the application:
 npm i inquirer@8.2.4
 
 ## Usage
-After cloning the repo, make sure you are in the Develop directory before running the command "node index.js". You will then be prompted to answer a series of questions. After submitting all responses, your README.md will be generated and ready for use.
+After cloning the repo, make sure you are in the Develop directory before running the command "node index.js". You will then be prompted to answer a series of questions. After submitting all responses, your README.md will be generated and ready for use. You can watch this [walkthrough video](https://drive.google.com/file/d/1ldcPboDsVU-nJbPDDzjQyfEE0CDjasq6/view) that will demonstrate the functionality of the application.
 
 ## License
   This application is licensed by the MIT license.
