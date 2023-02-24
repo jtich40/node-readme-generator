@@ -68,12 +68,12 @@ const questions = [
 function init() {
     inquirer
     .prompt(questions)
-    .then(responses => {
+    .then(responses => {    
         fs.writeFileSync("README.md", generateMarkdown(responses))
         console.log("Your README has been created!")
     })
 }
 
-
+    
 // Function call to initialize app
 init();
